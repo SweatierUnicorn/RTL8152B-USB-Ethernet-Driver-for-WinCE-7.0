@@ -1,8 +1,9 @@
 # RTL8152B USB Ethernet Driver for WinCE 7.0
 
+![Screenshot](Screen1.png)
+
 Author: SweatierUnicorn  
 GitHub: https://github.com/SweatierUnicorn
-
 This code is distributed by the author free of charge.
 
 ## Overview
@@ -83,5 +84,6 @@ The code was built and maintained with the following tools:
 - `panasonic_pe_patcher.py` is expected by the build script and should be available separately if you want to reproduce the same DLL build process.
 
 ## Publishing
+
 
 See `GITHUB_PUBLISH.txt` for a short example of how to initialize and publish this folder as a GitHub repository.
