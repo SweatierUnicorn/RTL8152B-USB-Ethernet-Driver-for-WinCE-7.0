@@ -40,7 +40,7 @@ If you want to use it on another WinCE device, board, or BSP, you may need to ad
 - USB client loading path
 - static IP or DHCP defaults
 - EHCI / USB routing details
-- post-link patching or deployment details
+- deployment details
 
 In other words, the code is reusable, but another device may require small source or registry changes.
 
@@ -69,21 +69,16 @@ The code was built and maintained with the following tools:
 - Microsoft Visual Studio 2008
 - Windows CE ARM toolchain
 - Toradex CE700 SDK
-- Python for the post-link PE patch step
 
 ## Build Notes
 
-- `compile_rtl8152.bat` optionally uses `panasonic_pe_patcher.py` if it is placed next to the script.
-- If the patcher is not present, the script still completes and skips that optional step.
 - Deployment and registry integration may differ on other BSPs.
 
 ## Notes
 
 - This repository is intended for source distribution.
 - Old builds and local binary artifacts are not required for publication.
-- `panasonic_pe_patcher.py` is expected by the build script and should be available separately if you want to reproduce the same DLL build process.
 
 ## Publishing
-
 
 See `GITHUB_PUBLISH.txt` for a short example of how to initialize and publish this folder as a GitHub repository.
