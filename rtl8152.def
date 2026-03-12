@@ -1,0 +1,6 @@
+LIBRARY rtl8152
+EXPORTS
+    DriverEntry
+    USBDeviceAttach
+    USBInstallDriver
+    USBUnInstallDriver
