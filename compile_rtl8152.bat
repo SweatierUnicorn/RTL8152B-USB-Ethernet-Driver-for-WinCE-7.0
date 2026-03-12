@@ -54,21 +54,6 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo.
-echo Checking optional post-link patch step...
-set PATCHER=panasonic_pe_patcher.py
-if exist "%PATCHER%" (
-    echo Applying post-link patch using %PATCHER%...
-    python "%PATCHER%" rtl8152.dll
-    if %ERRORLEVEL% NEQ 0 (
-        echo.
-        echo === POST-LINK PATCH FAILED ===
-        exit /b 1
-    )
-) else (
-    echo No local post-link patcher found. Skipping optional patch step.
-)
-
-echo.
 echo =============================================
 echo   BUILD SUCCESS
 echo =============================================
