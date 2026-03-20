@@ -78,7 +78,3 @@ The code was built and maintained with the following tools:
 
 - This repository is intended for source distribution.
 - Old builds and local binary artifacts are not required for publication.
-
-## Publishing
-
-See `GITHUB_PUBLISH.txt` for a short example of how to initialize and publish this folder as a GitHub repository.
